@@ -12,4 +12,6 @@ with open("readme.rst", encoding="UTF-8") as f:
         author_email="tvminh1701@gmail.com",
         packages=find_packages("src"),
         package_dir={"": "src"},
+        install_requires=["boto3"],
+        entry_points={"console_scripts": ["pgbackup=pgbackup.cli:main"]},
     )

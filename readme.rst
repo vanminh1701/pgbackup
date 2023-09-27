@@ -21,13 +21,13 @@ S3 Example w/ bucket name:
 
 ::
   
-        $ pgbackup posgresql://minh@localhost:5432/minh --driver s3 backups
+        $ pgbackup posgresql://minh:password@localhost:5432/minh --driver s3 backups
 
 Local Example w/ local path:
 
 ::
 
-        $pgbackup postgresql://minh@localhost:5432/minh --driver local ./dump.sql
+        $ pgbackup postgresql://minh:password@localhost:5432/minh --driver local ./dump.sql
 
 
 
